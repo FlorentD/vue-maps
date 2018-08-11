@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -57,6 +58,9 @@ module.exports = {
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: '../css/[name].css',
+    }),
+    new webpack.DefinePlugin({
+      __IMAGE_PATH__: JSON.stringify('img'),
     }),
   ],
 };

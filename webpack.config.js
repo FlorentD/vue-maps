@@ -1,6 +1,6 @@
+const webpack = require('webpack');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const webpack = require('webpack');
 
 module.exports = {
   entry: ['./scripts/index.js'],

@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "predist": "rm -fr dist && mkdir dist && mkdir dist/js",
+    "predist": "rm -fr dist && mkdir dist && mkdir dist/js && mkdir dist/img",
     "prettier": "prettier --single-quote --trailing-comma es5 --write",
-    "dist": "webpack --config webpack.prod.config.js --progress --colors && npm run dist:html",
+    "dist": "webpack --config webpack.prod.config.js --progress --colors && npm run dist:img && npm run dist:html",
     "dist:html": "htmlprocessor ./index.html -o dist/index.html",
+    "dist:img": "find scripts/data/assets/ -name \\*.svg -exec cp {} dist/img \\;",
     "test": "jest --config jest.config.json"
   },
   "keywords": [
