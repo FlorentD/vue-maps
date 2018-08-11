@@ -3,7 +3,7 @@
         <div class="chooser">
             <h1>Destination culinaire</h1>
             <span class="name">{{name}}</span>
-            <img class="flag" :src="`scripts/data/assets/${flag}.svg`"/>
+            <img class="flag" :src="`${imagePath}/${flag}.svg`"/>
             <button v-on:click="startRandomize">Trouver un pays</button>
         </div>
         <Map />
@@ -16,6 +16,9 @@ import Map from './Map.vue';
 
 export default {
   store,
+  data: {
+    imagePath: __IMAGE_PATH__,
+  },
   components: { Map },
   computed: mapGetters(['name', 'flag']),
   methods: mapActions(['startRandomize']),

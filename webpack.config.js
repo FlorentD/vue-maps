@@ -1,5 +1,6 @@
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: ['./scripts/index.js'],
@@ -34,5 +35,11 @@ module.exports = {
       vue$: 'vue/dist/vue.esm.js',
     },
   },
-  plugins: [new LiveReloadPlugin(), new VueLoaderPlugin()],
+  plugins: [
+    new LiveReloadPlugin(),
+    new VueLoaderPlugin(),
+    new webpack.DefinePlugin({
+      __IMAGE_PATH__: JSON.stringify('scripts/data/assets'),
+    }),
+  ],
 };
