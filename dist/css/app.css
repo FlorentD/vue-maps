@@ -6,36 +6,46 @@
 }
 
 
+.country-wrapper[data-v-1384365e] {
+    display: flex;
+    flex-direction: column;
+}
+.name[data-v-1384365e] {
+    margin-bottom: 20px;
+}
+.flag[data-v-1384365e] {
+    display: block;
+}
+
+
+h1[data-v-4e07629d] {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Cookie', cursive;
+}
+.chooser[data-v-4e07629d] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 600px;
+  border: 12px dashed #1b1a19;
+  padding: 20px;
+  text-align: center;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.button_find-country[data-v-4e07629d] {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
 .wrapper[data-v-f7efd948] {
   display: block;
   width: 100%;
   height: 100%;
-}
-h1[data-v-f7efd948] {
-  font-size: 3em;
-}
-.chooser[data-v-f7efd948] {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  right: 0px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom-left-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  z-index: 100;
-}
-.name[data-v-f7efd948] {
-  width: 100%;
-  display: inline-block;
-  font-size: 2em;
-  font-weight: bold;
-  margin: auto;
-  padding-bottom: 1em;
-}
-.flag[data-v-f7efd948] {
-  height: 200px;
-  margin: 0px 90px;
-  padding-bottom: 5em;
 }
 

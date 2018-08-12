@@ -1,1 +1,1 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{280:function(e){e.exports={type:"FeatureCollection",features:[{properties:{cca2:""}}]}}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{295:function(e){e.exports={type:"FeatureCollection",features:[{properties:{cca2:""}}]}}}]);
