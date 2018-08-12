@@ -31,7 +31,7 @@ export default new Vuex.Store({
         if (state.loop === 0) {
           clearInterval(handler);
         }
-      }, 140);
+      }, 200);
     },
   },
   getters: {

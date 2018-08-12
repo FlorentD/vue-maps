@@ -22,6 +22,7 @@
   "dependencies": {
     "leaflet": "1.3.3",
     "lodash": "4.17.10",
+    "typeit": "5.10.6",
     "vue": "2.5.17",
     "vue-form": "4.9.0",
     "vue-router": "3.0.1",
@@ -35,6 +36,7 @@
     "babel-loader": "7.1.5",
     "babel-minify": "0.4.3",
     "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "css-loader": "1.0.0",
     "extract-text-webpack-plugin": "3.0.2",
     "htmlprocessor": "0.2.6",
